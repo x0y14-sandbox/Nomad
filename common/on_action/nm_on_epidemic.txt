@@ -1,0 +1,65 @@
+﻿epidemic_ongoing_events = {
+	on_actions = {
+		nm_on_epidemic_action
+	}
+}
+
+nm_on_epidemic_action = {
+	trigger = {
+		OR = {
+			# 自分が独立した部族
+			is_landed = yes
+			is_independent_ruler = yes
+			government_has_flag = government_is_tribal
+
+			# 近くに独立した部族がいる
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				count > 0
+				is_landed = yes
+				is_independent_ruler = yes
+				government_has_flag = government_is_tribal
+			}
+		}
+
+		# どこかでメジャー以上のエピデミックが発生したら
+		any_realm_province = {
+			any_province_epidemic = {
+				count > 0
+				outbreak_intensity >= major
+			}
+		}
+	}
+
+	effect = {
+		# 自分がまだmodifier持ってなかったら
+		if = {
+			limit = {
+				NOT = { has_character_modifier = nm_sense_of_urgency_modifier }
+
+				is_ai = yes
+				is_landed = yes
+				is_independent_ruler = yes
+				government_has_flag = government_is_tribal
+			}
+			add_character_modifier = {
+				modifier = nm_sense_of_urgency_modifier
+				years = 1
+			}
+		}
+		# 近くにいるやつ全部
+		every_neighboring_and_across_water_top_liege_realm_owner = {
+			limit = {
+				NOT = { has_character_modifier = nm_sense_of_urgency_modifier }
+
+				is_ai = yes
+				is_landed = yes
+				is_independent_ruler = yes
+				government_has_flag = government_is_tribal
+			}
+			add_character_modifier = {
+				modifier = nm_sense_of_urgency_modifier
+				years = 1
+			}
+		}
+	}
+}

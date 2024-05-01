@@ -1,0 +1,6 @@
+﻿nm_sense_of_urgency_modifier = {
+	icon = stress_mixed
+	stress_gain_mult = 0.1
+	levy_size = 0.05
+	mercenary_hire_cost_mult = -0.05
+}
