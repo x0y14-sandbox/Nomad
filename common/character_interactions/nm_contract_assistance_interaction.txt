@@ -3,7 +3,7 @@
 # by Joe Parkin
 ##################################################
 
-contract_assistance_interaction = {
+nm_contract_assistance_interaction = {
 	category = interaction_category_diplomacy
 	interface_priority = 15
 	common_interaction = yes
