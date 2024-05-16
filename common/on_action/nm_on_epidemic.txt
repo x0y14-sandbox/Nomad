@@ -1,10 +1,12 @@
-﻿epidemic_ongoing_events = {
+﻿@NM_SOU_EPIDEMIC_DURATION_YEARS = 1
+
+epidemic_ongoing_events = {
 	on_actions = {
-		nm_on_epidemic_action
+		nm_nomads_fear_epidemic
 	}
 }
 
-nm_on_epidemic_action = {
+nm_nomads_fear_epidemic = {
 	trigger = {
 		OR = {
 			# 自分が独立した部族
@@ -31,34 +33,34 @@ nm_on_epidemic_action = {
 	}
 
 	effect = {
-		# 自分がまだmodifier持ってなかったら
+		# 自分がまだnm_sou_epidemic持ってなかったら
 		if = {
 			limit = {
-				NOT = { has_character_modifier = nm_sense_of_urgency_modifier }
-
+				NOT = { has_character_flag  = nm_sou_epidemic }
 				is_ai = yes
 				is_landed = yes
 				is_independent_ruler = yes
 				government_has_flag = government_is_tribal
 			}
-			add_character_modifier = {
-				modifier = nm_sense_of_urgency_modifier
-				years = 1
-			}
+			add_to_temporary_list = affectees
 		}
-		# 近くにいるやつ全部
+		# 隣接する遊牧民
 		every_neighboring_and_across_water_top_liege_realm_owner = {
 			limit = {
-				NOT = { has_character_modifier = nm_sense_of_urgency_modifier }
-
+				NOT = { has_character_flag = nm_sou_epidemic }
 				is_ai = yes
 				is_landed = yes
 				is_independent_ruler = yes
 				government_has_flag = government_is_tribal
 			}
-			add_character_modifier = {
-				modifier = nm_sense_of_urgency_modifier
-				years = 1
+			add_to_temporary_list = affectees
+		}
+		# 影響
+		every_in_list = {
+			list = affectees
+			add_character_flag = {
+				flag = nm_sou_epidemic
+				years = @NM_SOU_EPIDEMIC_DURATION_YEARS
 			}
 		}
 	}
