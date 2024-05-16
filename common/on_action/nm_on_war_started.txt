@@ -1,10 +1,12 @@
-﻿on_war_started = {
+﻿@NM_SOU_DECLARATION_WAR_BY_STRONGS_DURATION_YEARS = 1
+
+on_war_started = {
 	on_actions = {
-		nm_on_war_started_action
+		nm_nomads_fear_declaration_war_by_strongs
 	}
 }
 
-nm_on_war_started_action = {
+nm_nomads_fear_declaration_war_by_strongs = {
 	trigger = {
 		OR = {
 			AND = {
@@ -19,7 +21,7 @@ nm_on_war_started_action = {
 							government_has_flag = government_is_tribal
 							highest_held_title_tier = tier_empire
 						}
-						# 王国以上の封建/氏族/...
+						# 王国以上のnot部族
 						AND = {
 							NOT = { government_has_flag = government_is_tribal }
 							highest_held_title_tier >= tier_kingdom
@@ -45,42 +47,38 @@ nm_on_war_started_action = {
 		scope:defender = {
 			if = {
 				limit = {
-					NOT = { has_character_modifier = nm_sense_of_urgency_modifier }
-	
+					NOT = { has_character_flag = nm_sou_declaration_war_by_strongs }
 					is_ai = yes
 					is_landed = yes
 					is_independent_ruler = yes
 					government_has_flag = government_is_tribal
-	
 					# 公爵あるいは伯爵
 					highest_held_title_tier <= tier_duchy
 				}
-	
-				add_character_modifier = {
-					modifier = nm_sense_of_urgency_modifier
-					years = 1
-				}
+				add_to_temporary_list = affectees
 			}
 		}
-		
 		# 宣戦された部族の近隣の部族
 		scope:defender = {
 			every_neighboring_and_across_water_top_liege_realm_owner = {
 				limit = {
-					NOT = { has_character_modifier = nm_sense_of_urgency_modifier }
-
+					NOT = { has_character_flag = nm_sou_declaration_war_by_strongs }
 					is_ai = yes
 					is_landed = yes
 					is_independent_ruler = yes
 					government_has_flag = government_is_tribal
-
 					# 公爵あるいは伯爵
 					highest_held_title_tier <= tier_duchy
 				}
-				add_character_modifier = {
-					modifier = nm_sense_of_urgency_modifier
-					years = 1
-				}
+				add_to_temporary_list = affectees
+			}
+		}
+		# 影響
+		every_in_list = {
+			list = affectees
+			add_character_flag = {
+				flag = nm_sou_declaration_war_by_strongs
+				years = @NM_SOU_DECLARATION_WAR_BY_STRONGS_DURATION_YEARS
 			}
 		}
 	}
