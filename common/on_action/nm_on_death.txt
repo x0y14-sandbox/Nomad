@@ -1,0 +1,43 @@
+﻿@NM_REMEMBER_IMPORTANT_CHARACTER_WAS_KILLED_DURATION_YEARS = 2
+
+on_death = {
+	on_actions = {
+		nm_nomads_remember_important_character_was_killed
+	}
+}
+
+nm_nomads_remember_important_character_was_killed = {
+	trigger = {
+		# 他殺であること
+		exists = scope:killer
+
+		# 家族に殺されていないこと
+		NOT = { is_close_or_extended_family_of = scope:killer }
+
+		# 殺害されたキャラのメンバー誰かが独立した部族領主である
+		any_close_or_extended_family_member = {
+			is_landed = yes
+			is_independent_ruler = yes
+			government_has_flag = government_is_tribal
+		}
+	}
+	effect = {
+		# 独立した部族領主の家族全員
+		every_close_or_extended_family_member = {
+			limit = {
+				is_landed = yes
+				is_independent_ruler = yes
+				government_has_flag = government_is_tribal
+			}
+			add_to_temporary_list = affectees
+		}
+		# 影響
+		every_in_list = {
+			list = affectees
+			add_character_flag = {
+				flag = nm_remember_important_was_killed
+				years = @NM_REMEMBER_IMPORTANT_CHARACTER_WAS_KILLED_DURATION_YEARS
+			}
+		}
+	}
+}
