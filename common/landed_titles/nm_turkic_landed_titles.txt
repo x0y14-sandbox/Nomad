@@ -1,0 +1,118 @@
+﻿k_oghuz_confederation = {
+	color = turkish
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_pecheneg_confederation = {
+	color = { 0.85 0.79 0.25 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_cuman_confederation = {
+	color = { 0.75 0.60 0.20 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_khazar_confederation = {
+	color = khazar
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_bolghar_confederation = {
+	color = { 147 124 93 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_bashkir_confederation = {
+	color = { 118 89 51 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_avar_confederation = {
+	color = { 0.7 0.7 0.3 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_karluk_confederation = {
+	color = { 248 138 71 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_kimek_confederation = {
+	color = { 0.90 0.75 0.10 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_kipchak_confederation = {
+	color = { 0.55 0.50 0.15 }
+	
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_laktan_confederation = {
+	color = { 0.55 0.45 0.10 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_kirghiz_confederation = {
+	color = { 0.85 0.72 0.30 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_uyghur_confederation = {
+	color = { 0.85 0.75 0.50 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_yughur_confederation = {
+	color = { 0.65 0.95 0.55 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_uriankhai_confederation = {
+	color = { 0.75 0.8 0.50 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_chuvash_confederation = {
+	color = { 0.7 0.5 0.6 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_shatuo_confederation = {
+	color = { 0.7 0.3 0.2 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}

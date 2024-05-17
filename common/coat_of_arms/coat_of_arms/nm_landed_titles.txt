@@ -1,0 +1,131 @@
+﻿# MONGOLIC
+k_mongol_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_buryat_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_oirat_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_naiman_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_kerait_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_khitan_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_tuyuhun_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_jurchen_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_ongud_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+# TURKIC
+k_oghuz_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_pecheneg_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_cuman_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_khazar_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_bolghar_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_bashkir_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_avar_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_karluk_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_kimek_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_kipchak_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_laktan_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_kirghiz_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_uyghur_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_yughur_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_uriankhai_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_chuvash_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}
+
+k_shatuo_confederation = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+}

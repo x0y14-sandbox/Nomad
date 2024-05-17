@@ -1,0 +1,106 @@
+﻿l_english:
+  # MONGOLIC
+  k_mongol_confederation_article:0 "the "
+  k_mongol_confederation:1 "$mongol$ Confederation"
+  k_mongol_confederation_adj:1 "$mongol$"
+
+  k_buryat_confederation_article:0 "the "
+  k_buryat_confederation:1 "$buryat$ Confederation"
+  k_buryat_confederation_adj:1 "$buryat$"
+
+  k_oirat_confederation_article:0 "the "
+  k_oirat_confederation:1 "$oirat$ Confederation"
+  k_oirat_confederation_adj:1 "$oirat$"
+
+  k_naiman_confederation_article:0 "the "
+  k_naiman_confederation:1 "$naiman$ Confederation"
+  k_naiman_confederation_adj:1 "$naiman$"
+
+  k_kerait_confederation_article:0 "the "
+  k_kerait_confederation:1 "$kerait$ Confederation"
+  k_kerait_confederation_adj:1 "$kerait$"
+
+  k_khitan_confederation_article:0 "the "
+  k_khitan_confederation:1 "$khitan$ Confederation"
+  k_khitan_confederation_adj:1 "$khitan$"
+
+  k_tuyuhun_confederation_article:0 "the "
+  k_tuyuhun_confederation:1 "$tuyuhun$ Confederation"
+  k_tuyuhun_confederation_adj:1 "$tuyuhun$"
+
+  k_jurchen_confederation_article:0 "the "
+  k_jurchen_confederation:1 "$jurchen$ Confederation"
+  k_jurchen_confederation_adj:1 "$jurchen$"
+
+  k_ongud_confederation_article:0 "the "
+  k_ongud_confederation:1 "$ongud$ Confederation"
+  k_ongud_confederation_adj:1 "$ongud$"
+
+  # TURKIC
+  k_oghuz_confederation_article:0 "the "
+  k_oghuz_confederation:1 "$oghuz$ Confederation"
+  k_oghuz_confederation_adj:1 "$oghuz$"
+
+  k_pecheneg_confederation_article:0 "the "
+  k_pecheneg_confederation:1 "$pecheneg$ Confederation"
+  k_pecheneg_confederation_adj:1 "$pecheneg$"
+
+  k_cuman_confederation_article:0 "the "
+  k_cuman_confederation:1 "$cuman$ Confederation"
+  k_cuman_confederation_adj:1 "$cuman$"
+
+  k_khazar_confederation_article:0 "the "
+  k_khazar_confederation:1 "$khazar$ Confederation"
+  k_khazar_confederation_adj:1 "$khazar$"
+
+  k_bolghar_confederation_article:0 "the "
+  k_bolghar_confederation:1 "$bolghar$ Confederation"
+  k_bolghar_confederation_adj:1 "$bolghar$"
+
+  k_bashkir_confederation_article:0 "the "
+  k_bashkir_confederation:1 "$bashkir$ Confederation"
+  k_bashkir_confederation_adj:1 "$bashkir$"
+
+  k_avar_confederation_article:0 "the "
+  k_avar_confederation:1 "$avar$ Confederation"
+  k_avar_confederation_adj:1 "$avar$"
+
+  k_karluk_confederation_article:0 "the "
+  k_karluk_confederation:1 "$karluk$ Confederation"
+  k_karluk_confederation_adj:1 "$karluk$"
+
+  k_kimek_confederation_article:0 "the "
+  k_kimek_confederation:1 "$kimek$ Confederation"
+  k_kimek_confederation_adj:1 "$kimek$"
+
+  k_kipchak_confederation_article:0 "the "
+  k_kipchak_confederation:1 "$kipchak$ Confederation"
+  k_kipchak_confederation_adj:1 "$kipchak$"
+
+  k_laktan_confederation_article:0 "the "
+  k_laktan_confederation:1 "$laktan$ Confederation"
+  k_laktan_confederation_adj:1 "$laktan$"
+
+  k_kirghiz_confederation_article:0 "the "
+  k_kirghiz_confederation:1 "$kirghiz$ Confederation"
+  k_kirghiz_confederation_adj:1 "$kirghiz$"
+
+  k_uyghur_confederation_article:0 "the "
+  k_uyghur_confederation:1 "$uyghur$ Confederation"
+  k_uyghur_confederation_adj:1 "$uyghur$"
+
+  k_yughur_confederation_article:0 "the "
+  k_yughur_confederation:1 "$yughur$ Confederation"
+  k_yughur_confederation_adj:1 "$yughur$"
+
+  k_uriankhai_confederation_article:0 "the "
+  k_uriankhai_confederation:1 "$uriankhai$ Confederation"
+  k_uriankhai_confederation_adj:1 "$uriankhai$"
+
+  k_chuvash_confederation_article:0 "the "
+  k_chuvash_confederation:1 "$chuvash$ Confederation"
+  k_chuvash_confederation_adj:1 "$chuvash$"
+
+  k_shatuo_confederation_article:0 "the "
+  k_shatuo_confederation:1 "$shatuo$ Confederation"
+  k_shatuo_confederation_adj:1 "$shatuo$"

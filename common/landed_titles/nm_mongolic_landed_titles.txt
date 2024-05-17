@@ -1,0 +1,62 @@
+﻿k_mongol_confederation = {
+	color = mongol
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_buryat_confederation = {
+	color = { 0.1 0.1 0.8 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_oirat_confederation = {
+	color = { 0.2 0.2 1.0 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_naiman_confederation = {
+	color = { 0.45 0.55 0.9 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_kerait_confederation = {
+	color = { 0.4 0.6 0.9 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_khitan_confederation = {
+	color = { 45 49 107 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_tuyuhun_confederation = {
+	color = { 255 125 125 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_jurchen_confederation = {
+	color = { 122 114 92 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
+
+k_ongud_confederation = {
+	color = { 0.65 0.4 0.15 }
+
+	definite_form = yes
+	de_jure_drift_disabled = yes
+}
