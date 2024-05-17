@@ -3,4 +3,4 @@ tags={
 	"Gameplay"
 }
 name="Nomad"
-supported_version="1.12.4"
+supported_version="1.12.*"
