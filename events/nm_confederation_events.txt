@@ -1,4 +1,4 @@
-namespace = nm_confederation
+﻿namespace = nm_confederation
 
 nm_confederation.0001 = {
 	hidden = yes
@@ -13,6 +13,11 @@ nm_confederation.0001 = {
 				# 公爵領以下のステップの
 				highest_held_title_tier <= tier_duchy
 				capital_province = { geographical_region = world_steppe }
+				# モンゴル/テュルク系の
+				OR = {
+					culture = { has_cultural_pillar = heritage_mongolic }
+					culture = { has_cultural_pillar = heritage_turkic }
+				}
 				# 独立した部族
 				is_landed = yes
 				is_independent_ruler = yes
@@ -217,6 +222,11 @@ nm_confederation.9999 = {
 				government_has_flag = government_is_tribal
 				highest_held_title_tier <= tier_duchy
 				capital_province = { geographical_region = world_steppe }
+				# モンゴル/テュルク系の
+				OR = {
+					culture = { has_cultural_pillar = heritage_mongolic }
+					culture = { has_cultural_pillar = heritage_turkic }
+				}
 			}
 			add_character_flag = {
 				flag = nm_sou_declaration_war_by_strongs
