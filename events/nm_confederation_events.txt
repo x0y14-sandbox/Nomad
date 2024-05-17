@@ -1,6 +1,6 @@
-﻿namespace = nm_federation
+﻿namespace = nm_confederation
 
-nm_federation.0001 = {
+nm_confederation.0001 = {
 	hidden = yes
 	scope = none
 	immediate = {
@@ -40,7 +40,7 @@ nm_federation.0001 = {
 			}
 			# 連合構成国候補として保存
 			save_scope_as = candidate
-			add_to_list = federation_member_candidates
+			add_to_list = confederation_member_candidates
 
 			# 連合構成国候補
 			# 隣
@@ -61,7 +61,7 @@ nm_federation.0001 = {
 					is_independent_ruler = yes
 					government_has_flag = government_is_tribal
 				}
-				add_to_list = federation_member_candidates
+				add_to_list = confederation_member_candidates
 				# 隣の隣
 				every_neighboring_and_across_water_top_liege_realm_owner = {
 					limit = {
@@ -80,7 +80,7 @@ nm_federation.0001 = {
 						is_independent_ruler = yes
 						government_has_flag = government_is_tribal
 					}
-					add_to_list = federation_member_candidates
+					add_to_list = confederation_member_candidates
 				}
 			}
 
@@ -88,7 +88,7 @@ nm_federation.0001 = {
 			if = {
 				limit = {
 					any_in_list = {
-						list = federation_member_candidates
+						list = confederation_member_candidates
 						count >= 3
 						faith = scope:candidate.faith
 						culture = scope:candidate.culture
@@ -96,13 +96,13 @@ nm_federation.0001 = {
 				}
 				# リーダー選出
 				ordered_in_list = {
-					list = federation_member_candidates
+					list = confederation_member_candidates
 					order_by = {
 						value = 1
 						save_temporary_scope_as = member_temp
 						# OPINION
 						every_in_list = {
-							list = federation_member_candidates
+							list = confederation_member_candidates
 							limit = { NOT = { this = scope:member_temp } }
 							if = {
 								limit = {
@@ -151,7 +151,7 @@ nm_federation.0001 = {
 							}
 						}
 					}
-					save_scope_as = federation_leader
+					save_scope_as = confederation_leader
 				}
 				# タイトル作成
 				create_dynamic_title = {
@@ -169,7 +169,7 @@ nm_federation.0001 = {
 					set_no_automatic_claims = yes
 					set_can_be_named_after_dynasty = no
 					change_title_holder = {
-						holder = scope:federation_leader
+						holder = scope:confederation_leader
 						change = scope:change
 					}
 					save_scope_as = new_kingdom
@@ -182,20 +182,20 @@ nm_federation.0001 = {
 					save_scope_as = change
 				}
 				every_in_list = {
-					list = federation_member_candidates
+					list = confederation_member_candidates
 					limit = {
-						NOT = { this = scope:federation_leader }
-						faith = scope:federation_leader.faith
-						culture = scope:federation_leader.culture
+						NOT = { this = scope:confederation_leader }
+						faith = scope:confederation_leader.faith
+						culture = scope:confederation_leader.culture
 					}
 					change_liege = {
-						liege = scope:federation_leader
+						liege = scope:confederation_leader
 						change = scope:change
 					}
 				}
 				resolve_title_and_vassal_change = scope:change
 
-				scope:federation_leader = {
+				scope:confederation_leader = {
 					add_legitimacy = 500
 					add_prestige = 500
 				}
@@ -204,7 +204,7 @@ nm_federation.0001 = {
 	}
 }
 
-nm_federation.9999 = {
+nm_confederation.9999 = {
 	hidden = yes
 	orphan = yes
 

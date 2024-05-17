@@ -41,6 +41,6 @@ nm_nomads_federate = {
 		}
 	}
 	events = {
-		nm_federation.0001
+		nm_confederation.0001
 	}
 }
