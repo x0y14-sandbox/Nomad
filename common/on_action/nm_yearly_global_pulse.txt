@@ -1,0 +1,46 @@
+﻿yearly_global_pulse = {
+	on_actions = {
+		nm_nomads_federate
+	}
+}
+
+nm_nomads_federate = {
+	trigger = {
+		any_ruler = {
+			# 戦時中でない
+			is_at_war = no
+			# 大国からの干渉が懸念される
+			has_character_flag = nm_sou_declaration_war_by_strongs
+			# 公爵領以下のステップの
+			highest_held_title_tier <= tier_duchy
+			capital_province = { geographical_region = world_steppe }
+			# 独立した部族
+			is_landed = yes
+			is_independent_ruler = yes
+			government_has_flag = government_is_tribal
+
+			# 隣接する
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				# 2つ以上の
+				count >= 2
+				# 戦時中でない
+				is_at_war = no
+				# 宗教、文化が同じ
+				faith = prev.faith
+				culture = prev.culture
+				# 大国からの干渉が懸念される
+				has_character_flag = nm_sou_declaration_war_by_strongs
+				# 公爵領以下のステップの
+				highest_held_title_tier <= tier_duchy
+				capital_province = { geographical_region = world_steppe }
+				# 独立した部族
+				is_landed = yes
+				is_independent_ruler = yes
+				government_has_flag = government_is_tribal
+			}
+		}
+	}
+	events = {
+		nm_federation.0001
+	}
+}
