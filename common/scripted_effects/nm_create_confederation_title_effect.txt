@@ -1,0 +1,116 @@
+﻿# ROOT: NONE
+# CULTURE: former's culture
+# RETURN: scope:new_title
+nm_create_confederation_title_effect = {
+	if = {
+		limit = {
+			NOT = { nm_is_confederation_created_trigger = { CULTURE = $CULTURE$} }
+		}
+		# MONGOLIC
+		if = {
+			limit = { culture:mongol = this.culture }
+			title:k_mongol_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:buryat = this.culture }
+			title:k_buryat_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:oirat = this.culture }
+			title:k_naiman_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:naiman = this.culture }
+			title:k_naiman_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:kerait = this.culture }
+			title:k_kerait_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:khitan = this.culture }
+			title:k_khitan_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:tuyuhun = this.culture }
+			title:k_tuyuhun_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:jurchen = this.culture }
+			title:k_jurchen_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:ongud = this.culture }
+			title:k_ongud_confederation = { save_scope_as = new_title }
+		}
+		# TURKIC
+		else_if = {
+			limit = { culture:turkish = this.culture }
+			title:k_oghuz_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:pecheneg = this.culture }
+			title:k_pecheneg_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:cuman = this.culture }
+			title:k_cuman_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:khazar = this.culture }
+			title:k_khazar_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:bolghar = this.culture }
+			title:k_bolghar_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:bashkir = this.culture }
+			title:k_bashkir_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:avar = this.culture }
+			title:k_avar_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:karluk = this.culture }
+			title:k_karluk_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:kimek = this.culture }
+			title:k_kimek_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:kipchak = this.culture }
+			title:k_kipchak_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:laktan = this.culture }
+			title:k_laktan_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:kirghiz = this.culture }
+			title:k_kirghiz_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:uyghur = this.culture }
+			title:k_uyghur_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:yughur = this.culture }
+			title:k_yughur_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:uriankhai = this.culture }
+			title:k_uriankhai_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:chuvash = this.culture }
+			title:k_chuvash_confederation = { save_scope_as = new_title }
+		}
+		else_if = {
+			limit = { culture:shatuo = this.culture }
+			title:k_chuvash_confederation = { save_scope_as = new_title }
+		}
+	}
+}

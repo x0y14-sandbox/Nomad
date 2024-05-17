@@ -1,4 +1,4 @@
-﻿namespace = nm_confederation
+namespace = nm_confederation
 
 nm_confederation.0001 = {
 	hidden = yes
@@ -154,20 +154,21 @@ nm_confederation.0001 = {
 					save_scope_as = confederation_leader
 				}
 				# タイトル作成
-				create_dynamic_title = {
-					tier = kingdom
-					name = relation_placeholder
-				}
+				# create_dynamic_title = {
+				# 	tier = kingdom
+				# 	name = relation_placeholder
+				# }
 				# リーダーに付与
+				nm_create_confederation_title_effect = { CULTURE = scope:confederation_leader.culture }
 				create_title_and_vassal_change = {
 					type = created
 					save_scope_as = change
 					add_claim_on_loss = no
 				}
 				scope:new_title = {
-					set_destroy_on_gain_same_tier = yes
-					set_no_automatic_claims = yes
-					set_can_be_named_after_dynasty = no
+					# set_destroy_on_gain_same_tier = yes
+					# set_no_automatic_claims = yes
+					# set_can_be_named_after_dynasty = no
 					change_title_holder = {
 						holder = scope:confederation_leader
 						change = scope:change

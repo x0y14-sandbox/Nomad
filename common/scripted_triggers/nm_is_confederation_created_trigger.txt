@@ -1,0 +1,112 @@
+﻿nm_is_confederation_created_trigger = {
+		# MONGOLIC
+		trigger_if = {
+			limit = { $CULTURE$ = culture:mongol }
+			exists = title:k_mongol_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:buryat }
+			exists = title:k_buryat_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:oirat }
+			exists = title:k_oirat_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:naiman }
+			exists = title:k_naiman_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:kerait }
+			exists = title:k_kerait_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:khitan }
+			exists = title:k_khitan_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:tuyuhun }
+			exists = title:k_tuyuhun_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:jurchen }
+			exists = title:k_jurchen_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:ongud }
+			exists = title:k_ongud_confederation.holder
+		}
+		# TURKIC
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:turkish }
+			exists = title:k_oghuz_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:pecheneg }
+			exists = title:k_pecheneg_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:cuman }
+			exists = title:k_cuman_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:khazar }
+			exists = title:k_khazar_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:bolghar }
+			exists = title:k_bolghar_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:bashkir }
+			exists = title:k_bashkir_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:avar }
+			exists = title:k_avar_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:karluk }
+			exists = title:k_karluk_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:kimek }
+			exists = title:k_kimek_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:kipchak }
+			exists = title:k_kipchak_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:laktan }
+			exists = title:k_laktan_confederation.holder
+		}
+	
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:kirghiz }
+			exists = title:k_kirghiz_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:uyghur }
+			exists = title:k_uyghur_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:yughur }
+			exists = title:k_yughur_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:uriankhai }
+			exists = title:k_uriankhai_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:chuvash }
+			exists = title:k_chuvash_confederation.holder
+		}
+		trigger_else_if = {
+			limit = { $CULTURE$ = culture:shatuo }
+			exists = title:k_shatuo_confederation.holder
+		}
+		trigger_else = {
+			always = no
+		}
+}
