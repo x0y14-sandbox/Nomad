@@ -210,7 +210,7 @@ nm_confederation.0001 = {
 	}
 }
 
-nm_confederation.9999 = {
+nm_confederation.9001 = {
 	hidden = yes
 	orphan = yes
 
