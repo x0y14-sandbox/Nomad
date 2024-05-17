@@ -6,6 +6,8 @@ nm_confederation.0001 = {
 	immediate = {
 		random_ruler = {
 			limit = {
+				# AIの
+				is_ai = yes
 				# 戦時中でない
 				is_at_war = no
 				# 大国からの干渉が懸念される
@@ -27,6 +29,8 @@ nm_confederation.0001 = {
 				any_neighboring_and_across_water_top_liege_realm_owner = {
 					# 2つ以上の
 					count >= 2
+					# AIの
+					is_ai = yes
 					# 戦時中でない
 					is_at_war = no
 					# 宗教、文化が同じ
@@ -51,6 +55,8 @@ nm_confederation.0001 = {
 			# 隣
 			every_neighboring_and_across_water_top_liege_realm_owner = {
 				limit = {
+					# AIの
+					is_ai = yes
 					# 戦時中でない
 					is_at_war = no
 					# 宗教、文化が同じ
@@ -70,6 +76,8 @@ nm_confederation.0001 = {
 				# 隣の隣
 				every_neighboring_and_across_water_top_liege_realm_owner = {
 					limit = {
+						# AIの
+						is_ai = yes
 						# 戦時中でない
 						is_at_war = no
 						# 宗教、文化が同じ
